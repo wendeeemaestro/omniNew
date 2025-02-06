@@ -1,0 +1,232 @@
+/* *********SMALL LAPTOP********** */
+@media (max-width: 84em) {
+  .home-container {
+    max-width: 120rem;
+  }
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* *********SMALL LANDSCAPE LAPTOP********** */
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+  .home-container {
+    gap: 4.8rem;
+  }
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+  .heading-tertiary {
+    font-size: 2.4rem;
+  }
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+  .header {
+    padding: 0 3.2rem;
+  }
+  .main-nav-list {
+    gap: 3.2rem;
+  }
+  .testimonial-container {
+    padding: 9.6rem 3.2rem;
+  }
+}
+
+/* *********TABLET********** */
+
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+  .home-container {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+    gap: 6.4rem;
+  }
+  .hero-img {
+    width: 50%;
+    /* border: 9px solid #e67e22; */
+  }
+  .img-fuse {
+    /* border: 9px solid #e67e22; */
+    border-radius: 50%;
+  }
+  .welcome-txt {
+    text-align: center;
+  }
+  .hero-image {
+    text-align: center;
+  }
+  .delivered-meals {
+    justify-content: center;
+    margin-top: 3.2rem;
+  }
+  .logos img {
+    height: 2.4rem;
+  }
+  .step-number {
+    font-size: 7.4rem;
+  }
+  .meal-content {
+    padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+  }
+  .section-testimonial {
+    grid-template-columns: 1fr;
+  }
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .CTA {
+    grid-template-columns: 3fr 2fr;
+  }
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+  .btn--form {
+    margin-top: 1.2rem;
+  }
+}
+
+/* *********MOBILE********** */
+@media (max-width: 57em) {
+  .mobile-hamburger {
+    display: block;
+    z-index: 9999;
+  }
+
+  .nav-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.97);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    transform: translateX(100%);
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+  .nav-link:link,
+  .nav-link:visited {
+    font-size: 3rem;
+  }
+  .nav-open .nav-bar {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+  .nav-open .mobile-hamburger-icon[name="close-outline"] {
+    display: block;
+  }
+  .nav-open .mobile-hamburger-icon[name="menu-outline"] {
+    display: none;
+  }
+}
+
+/* *********SMALLER TABLET********** */
+@media (max-width: 44em) {
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .semo {
+    display: none;
+    visibility: hidden;
+  }
+  .heading-secondary {
+    margin-bottom: 4.8rem;
+  }
+  .princing-plan {
+    width: 100%;
+  }
+  .grid--footer {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .logo-col,
+  .address-col {
+    grid-column: span 3;
+  }
+  .nav-col {
+    grid-row: 1;
+    grid-column: span 2;
+    margin-bottom: 3.2rem;
+  }
+}
+
+/* *********SMALL PHONES********** */
+
+@media (max-width: 37em) {
+  .grid {
+    row-gap: 4.8rem;
+  }
+  .grid--2-cols,
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .semo {
+    display: block;
+    visibility: visible;
+  }
+  .home-container {
+    padding: 0 3.2rem;
+  }
+  #section-home {
+    padding: 2.4rem 0 6.4rem 0;
+  }
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 2.4rem 1.6rem;
+  }
+  .hero-img {
+    width: 85%;
+    border-radius: 50%;
+  }
+  .logos img {
+    height: 1.2rem;
+  }
+  .step-img-box:nth-child(2) {
+    grid-row: 1;
+  }
+  .step-img-box:nth-child(6) {
+    grid-row: 5;
+  }
+  .step-img-box {
+    transform: translateY(2.4rem);
+  }
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+  }
+  .CTA {
+    grid-template-columns: 1fr;
+  }
+  .CTA-img-box {
+    height: 32rem;
+    grid-row: 1;
+  }
+  .CTA-text-box {
+    padding: 3.2rem;
+  }
+}
